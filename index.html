@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JavaScript - SWITCH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Exercícios JavaScript com SWITCH</h1>
+            <p class="subtitle">Pratique estruturas condicionais</p>
+        </header>
+
+        <!-- Exercício 1: Gênero Musical -->
+        <section class="exercise-card">
+            <h2>Exercício 1: Seleção de Gênero Musical</h2>
+            <p class="instruction">Escolha seu gênero musical preferido:</p>
+
+            <div class="options-list">
+                <ul>
+                    <li><strong>1</strong> - Rock</li>
+                    <li><strong>2</strong> - Pop</li>
+                    <li><strong>3</strong> - Hip Hop</li>
+                    <li><strong>4</strong> - Eletrônica</li>
+                    <li><strong>5</strong> - Jazz</li>
+                    <li><strong>6</strong> - Clássica</li>
+                </ul>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="generoInput" placeholder="Digite o número (1-6)" min="1" max="6">
+                <button onclick="selecionarGenero()">Selecionar</button>
+            </div>
+
+            <div id="resultadoGenero" class="result"></div>
+        </section>
+
+        <!-- Exercício 2: Tema Personalizado -->
+        <section class="exercise-card">
+            <h2>Exercício 2: Seleção de Área de Estudo</h2>
+            <p class="instruction">Escolha uma área de tecnologia para se especializar:</p>
+
+            <div class="options-list">
+                <ul>
+                    <li><strong>1</strong> - Desenvolvimento Web</li>
+                    <li><strong>2</strong> - Inteligência Artificial</li>
+                    <li><strong>3</strong> - Segurança da Informação</li>
+                    <li><strong>4</strong> - Desenvolvimento Mobile</li>
+                    <li><strong>5</strong> - Ciência de Dados</li>
+                    <li><strong>6</strong> - DevOps</li>
+                </ul>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="temaInput" placeholder="Digite o número (1-6)" min="1" max="6">
+                <button onclick="selecionarTema()">Selecionar</button>
+            </div>
+
+            <div id="resultadoTema" class="result"></div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Desenvolvido para prática de JavaScript | Estruturas SWITCH</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
